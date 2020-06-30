@@ -10,7 +10,7 @@ exports.onPreBootstrap = ({ reporter }) => {
 };
 
 exports.sourceNodes = ({ actions }) => {
-  actions.createType(`
+  actions.createTypes(`
         type Event implements Node @dontInfer {
             id: ID!
             name: String!
@@ -39,5 +39,41 @@ exports.createResolvers = ({ createResolvers }) => {
         resolve: (source) => slugify(source.name),
       },
     },
+  });
+};
+
+exports.createPages = async ({ actions, graphql, reporter }) => {
+  const basePath = "/";
+  actions.createPage({
+    path: basePath,
+    component: require.resolve("./src/templates/events.js"),
+  });
+
+  const result = await graphql(`
+    query {
+      allEvent(sort: { fields: startDate, order: ASC }) {
+        nodes {
+          id
+          slug
+        }
+      }
+    }
+  `);
+
+  if (result.errors) {
+    reporter.panic("error loading events", result.errors);
+    return;
+  }
+
+  const events = result.data.allEvent.nodes;
+  events.forEach((event) => {
+    const slug = event.slug;
+    actions.createPage({
+      path: slug,
+      component: require.resolve("./src/templates/event.js"),
+      context: {
+        eventID: event.id,
+      },
+    });
   });
 };
