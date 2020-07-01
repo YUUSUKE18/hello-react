@@ -17,6 +17,7 @@ const EventDate = ({ startDate, endDate }) => {
       <time dateTime={start.toISOString()}>
         {getDate(start, { year: isOneDay })}
       </time>
+      <>
       {!isOneDay && (
         <>
           -
