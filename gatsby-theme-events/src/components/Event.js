@@ -4,7 +4,7 @@ const getDate = (date, { day = true, month = true, year = true } = {}) =>
   date.toLocalDateString("en-US", {
     day: day ? "numeric" : undefined,
     month: month ? "long" : undefined,
-    year: year ? "long" : undefined,
+    year: year ? "numeric" : undefined,
   });
 
 const EventDate = ({ startDate, endDate }) => {
@@ -17,7 +17,6 @@ const EventDate = ({ startDate, endDate }) => {
       <time dateTime={start.toISOString()}>
         {getDate(start, { year: isOneDay })}
       </time>
-      <>
       {!isOneDay && (
         <>
           -
