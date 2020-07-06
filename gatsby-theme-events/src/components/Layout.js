@@ -1,10 +1,11 @@
 import React from "react";
+import { Heading, Container } from "theme-ui";
 
 const Layout = ({ children }) => {
   return (
     <div>
-      <h1>Gatsby Theme</h1>
-      {children}
+      <Heading>Gatsby Theme</Heading>
+      <Container>{children}</Container>
     </div>
   );
 };

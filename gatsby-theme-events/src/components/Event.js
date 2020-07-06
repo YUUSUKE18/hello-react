@@ -1,4 +1,5 @@
 import React from "react";
+import { Styled } from "theme-ui";
 
 const getDate = (date, { day = true, month = true, year = true } = {}) =>
   date.toLocaleDateString("en-US", {
@@ -32,15 +33,15 @@ const EventDate = ({ startDate, endDate }) => {
 const Event = ({ name, location, url, startDate, endDate }) => {
   return (
     <div>
-      <h2>
+      <Styled.h2>
         {name} ({location})
-      </h2>
+      </Styled.h2>
       <p>
         <EventDate startDate={startDate} endDate={endDate} />
       </p>
-      <p>
+      <Styled.p>
         Website: <a href={url}>{url}</a>
-      </p>
+      </Styled.p>
     </div>
   );
 };

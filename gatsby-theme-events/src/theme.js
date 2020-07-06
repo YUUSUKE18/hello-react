@@ -15,7 +15,7 @@ export const theme = {
   },
   sizes: {
     default: "90vw",
-    max: "400px",
+    max: "540px",
   },
   text: {
     heading: {
