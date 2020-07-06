@@ -6,6 +6,7 @@ const preferDefault = m => m && m.default || m
 
 exports.components = {
   "component---cache-dev-404-page-js": hot(preferDefault(require("/Users/yuusuke_mbp/Desktop/hello-yuusuke/site/.cache/dev-404-page.js"))),
+  "component---gatsby-theme-events-src-templates-event-js": hot(preferDefault(require("/Users/yuusuke_mbp/Desktop/hello-yuusuke/gatsby-theme-events/src/templates/event.js"))),
   "component---gatsby-theme-events-src-templates-events-js": hot(preferDefault(require("/Users/yuusuke_mbp/Desktop/hello-yuusuke/gatsby-theme-events/src/templates/events.js")))
 }
 
