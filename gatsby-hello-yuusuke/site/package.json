@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "name": "site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "clean": "gatsby clean",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yuusuke Okamoto",
+  "license": "MIT",
+  "dependencies": {
+    "gatsby": "^2.23.21",
+    "gatsby-original-theme": "*",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "name": "gatsby-original-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yuusuke Okamoto",
+  "license": "MIT",
+  "peerDependencies": {
+    "gatsby": "^2.23.21",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "gatsby": "^2.23.21",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
