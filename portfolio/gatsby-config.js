@@ -26,7 +26,6 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
-      {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `data`,
@@ -36,6 +35,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
-    },
+    `gatsby-plugin-postcss`,
   ],
 }
