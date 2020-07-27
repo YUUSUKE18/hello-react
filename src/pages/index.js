@@ -6,7 +6,6 @@ import SEO from "../components/Seo";
 import PostsList from "../components/PostsList";
 
 const IndexPage = ({ data }) => {
-  console.log("data", data);
   return (
     <Layout>
       <SEO title="Home" />
