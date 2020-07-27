@@ -2,6 +2,7 @@
 title: Redux入門
 release_day: 2020/07/26
 rewrite_day: 2020/07/26
+featuredImage: react.jpg
 description: React入門です。
 ---
 
