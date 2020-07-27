@@ -1,8 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../components/Layout";
+import SEO from "../components/Seo";
+import PostsList from "../components/PostsList";
 
 const IndexPage = ({ data }) => {
   console.log("data", data);
@@ -10,24 +11,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Home" />
       <h1>Top Page</h1>
-      <ul>
-        {data.posts.edges.map(({ node }) => {
-          const {
-            title,
-            description,
-            release_day,
-            rewrite_day,
-          } = node.frontmatter;
-          return (
-            <li key={title} className="mt-4">
-              <h2 className="text-2xl font-semibold">{title}</h2>
-              <p>{description}</p>
-              <p>{release_day}</p>
-              <p>{rewrite_day}</p>
-            </li>
-          );
-        })}
-      </ul>
+      <PostsList posts={data.posts} />
     </Layout>
   );
 };
