@@ -10,7 +10,6 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <h1>Top Page</h1>
       <PostsList posts={data.posts} />
     </Layout>
   );
@@ -26,6 +25,9 @@ export const pageQuery = graphql`
             description
             release_day
             rewrite_day
+          }
+          fields {
+            slug
           }
         }
       }
