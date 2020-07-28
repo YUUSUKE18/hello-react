@@ -3,6 +3,7 @@ module.exports = {
     title: "Hello React",
     description: "This is a React Blog!",
     author: "Yuusuke Okamoto",
+    siteUrl: "https://yuusuke18.github.io/hello-react/",
   },
   pathPrefix: "/hello-react",
   plugins: [
