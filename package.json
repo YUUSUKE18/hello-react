@@ -1,5 +1,5 @@
 {
-  "name": "hello-yuusuke-portfolio",
+  "name": "hello-react",
   "private": true,
   "description": "This website is a showcase of my projects",
   "version": "1.0.0",
@@ -37,11 +37,10 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/YUUSUKE18/hello-yuusuke"
+    "url": "https://github.com/YUUSUKE18/hello-react"
   }
 }

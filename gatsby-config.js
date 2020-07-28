@@ -1,8 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Hello React",
-    description: "This is React Blog!",
-    siteUrl: "https://yuusuke18.github.io/hello-react/.",
+    description: "This is a React Blog!",
     author: "Yuusuke Okamoto",
   },
   pathPrefix: "/hello-react",
