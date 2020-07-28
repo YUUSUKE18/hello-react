@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: "Hello React",
-    description: "This is Yuusuke's Portfolio Website!",
-    siteUrl: "https://www.hello-yuusuke.work",
+    description: "This is React Blog!",
+    siteUrl: "https://yuusuke18.github.io/hello-react/.",
     author: "Yuusuke Okamoto",
-    twitter: "yuusukesan_EN",
   },
+  pathPrefix: "/hello-react",
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,
