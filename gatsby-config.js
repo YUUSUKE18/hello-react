@@ -9,8 +9,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Yuusuke Okamoto`,
-        short_name: `yuusuke`,
+        name: `Hello React Blog`,
+        short_name: `HelloReactBlog`,
         start_url: `/`,
         background_color: `#337ab7`,
         theme_color: `#337ab7`,
