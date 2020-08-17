@@ -1,14 +1,14 @@
 var plugins = [{
-      plugin: require('/Users/yuusuke_mbp/Desktop/hello-react/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"Yuusuke Okamoto","short_name":"yuusuke","start_url":"/","background_color":"#337ab7","theme_color":"#337ab7","display":"fullscreen","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":null},
+      plugin: require('/Users/yuusuke_mbp/Desktop/hello-react-blog/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      options: {"plugins":[],"name":"Hello React Blog","short_name":"HelloReactBlog","start_url":"/","background_color":"#337ab7","theme_color":"#337ab7","display":"fullscreen","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":null},
     },{
-      plugin: require('/Users/yuusuke_mbp/Desktop/hello-react/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/Users/yuusuke_mbp/Desktop/hello-react-blog/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/yuusuke_mbp/Desktop/hello-react/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
+      plugin: require('/Users/yuusuke_mbp/Desktop/hello-react-blog/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/yuusuke_mbp/Desktop/hello-react/node_modules/gatsby-plugin-prefetch-google-fonts/gatsby-ssr'),
+      plugin: require('/Users/yuusuke_mbp/Desktop/hello-react-blog/node_modules/gatsby-plugin-prefetch-google-fonts/gatsby-ssr'),
       options: {"plugins":[],"fonts":[{"family":"Roboto","variants":["300","400","500"]},{"family":"Lobster","variants":["300","400","500"]},{"family":"Rubik","variants":["300","400","500","700","900"]}]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
