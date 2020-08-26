@@ -6,6 +6,7 @@ module.exports = {
     author: "Yuusuke Okamoto",
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -18,7 +19,6 @@ module.exports = {
         // icon: `src/static/logo/favicon.png`,
       },
     },
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -51,6 +51,7 @@ module.exports = {
       //     path: `${__dirname}/src/data`,
       //   },
     },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
